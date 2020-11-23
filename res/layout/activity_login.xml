@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="monospace"
+        android:text="WINVILLE SCANNER"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/usr_name"
+        android:layout_width="206dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="104dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/usr_pwd"
+        android:layout_width="206dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="104dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usr_name" />
+
+    <Button
+        android:id="@+id/btn_lgn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="162dp"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usr_pwd" />
+
+    <TextView
+        android:id="@+id/go_to_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="177dp"
+        android:text="Don't have an account? Signup here!"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lgn" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="89dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="149dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

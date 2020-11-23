@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Winville Scanner</string>
+    <string name="scan_something">Scan Something</string>
+    <string name="company_tel">Company Tel</string>
+    <string name="register">Register</string>
+    <string name="company_location">Company Location</string>
+    <string name="company_branch">Company Branch</string>
+    <string name="log_in">Log in?</string>
+    <string name="company_name">Company Name</string>
+    <string name="company_email">Company Email</string>
+</resources>

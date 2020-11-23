@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scan_screen"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:autoFocusButtonColor="#fff"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="#fff"
+        app:flashButtonVisible="true"
+        app:maskColor="#3A381766" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </com.budiyev.android.codescanner.CodeScannerView>
+
+
+    <TextView
+        android:id="@+id/tv_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/scan_something" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scan_screen"
+        android:layout_marginTop="43dp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/sp_tView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_textView"
+        android:layout_below="@id/spinner"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="50dp"
+        android:textSize="23sp"
+        android:text="Testing" />
+
+</RelativeLayout>
